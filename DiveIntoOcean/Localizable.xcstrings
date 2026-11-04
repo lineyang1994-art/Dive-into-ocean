@@ -1,0 +1,15 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Airbuild is ready" : {
+
+    },
+    "Made with AirBuild" : {
+      "comment" : "Credit at the bottom of Settings. Keep the name AirBuild as is."
+    },
+    "Tap count: %lld" : {
+
+    }
+  },
+  "version" : "1.0"
+}

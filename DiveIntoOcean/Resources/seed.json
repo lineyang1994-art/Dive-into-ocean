@@ -1,0 +1,1070 @@
+{
+ "sites": [
+  {
+   "id": "dauin",
+   "name": "Dauin",
+   "nameZh": "道因",
+   "country": "Philippines",
+   "region": "Negros Oriental",
+   "lat": 9.19,
+   "lon": 123.27,
+   "types": [
+    "沙泥底",
+    "海岛"
+   ],
+   "summary": "位于菲律宾内格罗斯岛东南海岸，以黑色火山沙底的微距潜水闻名。",
+   "characteristics": [
+    "黑色火山沙底，适合寻找小型生物",
+    "沿岸有多处海洋保护区",
+    "多为岸潜或短船程"
+   ],
+   "image": "site-dauin"
+  },
+  {
+   "id": "apo",
+   "name": "Apo Island",
+   "nameZh": "阿波岛",
+   "country": "Philippines",
+   "region": "Negros Oriental",
+   "lat": 9.075,
+   "lon": 123.27,
+   "types": [
+    "海岛",
+    "珊瑚礁"
+   ],
+   "summary": "位于内格罗斯岛外海的小岛，周围是海洋保护区，珊瑚礁生态完整。",
+   "characteristics": [
+    "海岛周围的珊瑚礁与海洋保护区",
+    "常在这里看到海龟",
+    "海流较强的区域需要经验"
+   ],
+   "image": "site-apo"
+  },
+  {
+   "id": "moalboal",
+   "name": "Moalboal",
+   "nameZh": "莫阿尔博阿",
+   "country": "Philippines",
+   "region": "Cebu",
+   "lat": 9.95,
+   "lon": 123.4,
+   "types": [
+    "珊瑚礁",
+    "峭壁"
+   ],
+   "summary": "位于宿务岛西南岸，近岸有珊瑚礁壁，以靠近岸边的沙丁鱼群闻名。",
+   "characteristics": [
+    "靠近海岸的礁壁",
+    "著名的沙丁鱼群",
+    "适合自由潜和岸潜"
+   ],
+   "image": "site-moalboal"
+  },
+  {
+   "id": "anilao",
+   "name": "Anilao",
+   "nameZh": "阿尼劳",
+   "country": "Philippines",
+   "region": "Batangas",
+   "lat": 13.76,
+   "lon": 120.91,
+   "types": [
+    "沙泥底",
+    "珊瑚礁"
+   ],
+   "summary": "位于吕宋岛南部的巴丹加斯，是东南亚著名的微距潜水地。",
+   "characteristics": [
+    "海蛞蝓等小型生物密度高",
+    "适合微距摄影",
+    "潜点多为礁石与沙泥混合"
+   ],
+   "image": "site-anilao"
+  },
+  {
+   "id": "tulamben",
+   "name": "Tulamben",
+   "nameZh": "图兰本",
+   "country": "Indonesia",
+   "region": "Bali",
+   "lat": -8.28,
+   "lon": 115.59,
+   "types": [
+    "沉船",
+    "沙泥底"
+   ],
+   "summary": "位于巴厘岛东北岸，以近岸的美国军舰 USAT Liberty 沉船闻名。",
+   "characteristics": [
+    "可以从岸边进入的沉船",
+    "沉船表面长满珊瑚",
+    "沙泥底也有不少小型生物"
+   ],
+   "image": "site-tulamben"
+  }
+ ],
+ "species": [
+  {
+   "id": "ocellaris-clownfish",
+   "nameZh": "眼斑双锯鱼",
+   "nameEn": "Ocellaris clownfish",
+   "scientific": "Amphiprion ocellaris",
+   "category": "reefFish",
+   "family": "雀鲷科 Pomacentridae",
+   "summary": "与海葵共生的小型礁鱼，橙色身体上有白色横带，是最容易认出的潜水明星之一。",
+   "features": [
+    "橙色身体，有三条白色横带（头后、身体中部、尾柄）",
+    "白带带有细黑边，鳍缘也常带黑边",
+    "体型小，成鱼通常不超过 10 厘米"
+   ],
+   "similar": "与公子小丑鱼（Amphiprion percula）外形非常相似，黑边的粗细与背鳍棘数等细节才是区分依据，潜水时通常很难分辨。",
+   "habitat": "生活在珊瑚礁潟湖和礁坡，与大型海葵共生。",
+   "diet": "杂食，吃藻类和浮游动物。",
+   "behavior": "一个海葵里通常生活着一对繁殖鱼和若干小鱼；群体中体型最大的是雌鱼。",
+   "distribution": "西太平洋与东印度洋，包括东南亚、澳大利亚北部和日本南部。",
+   "fact": "小丑鱼出生时都是雄性，群体中的雌鱼不在时，体型最大的雄鱼会转变为雌鱼。",
+   "tips": [
+    "不要触碰海葵，它是小丑鱼的家。",
+    "保持距离，鱼会护巢并冲向靠得太近的物体。"
+   ],
+   "image": "ocellaris-clownfish",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "red-lionfish",
+   "nameZh": "魔鬼蓑鲉",
+   "nameEn": "Red lionfish",
+   "scientific": "Pterois volitans",
+   "category": "reefFish",
+   "family": "鲉科 Scorpaenidae",
+   "summary": "张开宽大胸鳍和长毒棘的捕食者，常在礁石缝隙附近悬停。",
+   "features": [
+    "红棕色与白色相间的条纹",
+    "胸鳍宽大呈扇状，背鳍棘细长",
+    "头部有须状肉质突起"
+   ],
+   "similar": "与近缘种 Pterois miles 十分相似，需要看鳍条数量等细节。",
+   "habitat": "珊瑚礁、礁壁、沉船和礁石缝隙。",
+   "diet": "肉食，捕食小鱼和甲壳类。",
+   "behavior": "黄昏和夜间更活跃，会张开胸鳍把猎物逼向角落。",
+   "distribution": "原产于印度洋-太平洋；在西大西洋与加勒比海是入侵物种。",
+   "fact": "背鳍等鳍棘带毒，但魔鬼蓑鲉通常不主动攻击潜水员。",
+   "tips": [
+    "鳍棘有毒，不要触碰或靠得太近。",
+    "可在沉船和礁石下方寻找它。"
+   ],
+   "image": "red-lionfish",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "mandarinfish",
+   "nameZh": "曼陀罗鱼（花斑连鳍䲗）",
+   "nameEn": "Mandarinfish",
+   "scientific": "Synchiropus splendidus",
+   "category": "reefFish",
+   "family": "连鳍䲗科 Callionymidae",
+   "summary": "色彩极艳丽的小型底栖鱼，黄昏时在碎珊瑚间活动。",
+   "features": [
+    "蓝色底色上布满橙色波纹",
+    "体型小，成鱼通常只有几厘米长",
+    "体表无鳞，覆盖黏液"
+   ],
+   "similar": "同属的鱼颜色相近，但花斑连鳍䲗的蓝橙波纹最为典型。",
+   "habitat": "潟湖和近岸的碎珊瑚、枝状珊瑚缝隙。",
+   "diet": "吃小型甲壳类等微小底栖生物。",
+   "behavior": "常躲在碎珊瑚里，黄昏前后出来活动，繁殖时成对上浮。",
+   "distribution": "西太平洋，从日本南部到澳大利亚北部。",
+   "fact": "体表黏液有难闻的气味，被认为能帮助它避开捕食者。",
+   "tips": [
+    "黄昏时在碎珊瑚附近安静等待，更容易看到。",
+    "不要使用强光长时间照射。"
+   ],
+   "image": "mandarinfish",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "pygmy-seahorse",
+   "nameZh": "豆丁海马（巴氏海马）",
+   "nameEn": "Bargibant's pygmy seahorse",
+   "scientific": "Hippocampus bargibanti",
+   "category": "reefFish",
+   "family": "海龙科 Syngnathidae",
+   "summary": "体长约 2 厘米的迷你海马，伪装成它栖身的柳珊瑚。",
+   "features": [
+    "体长通常只有 2 厘米左右",
+    "身体布满圆形瘤状突起",
+    "体色与所栖息的柳珊瑚相同（粉紫或黄橙）"
+   ],
+   "similar": "与其他小型海马的区别在于与特定柳珊瑚的紧密共生和瘤状突起。",
+   "habitat": "生活在深一些的珊瑚礁壁上的柳珊瑚（海扇）上。",
+   "diet": "吃浮游的微小生物。",
+   "behavior": "几乎终生停留在同一株柳珊瑚上，难以发现。",
+   "distribution": "西太平洋，从印度尼西亚到澳大利亚北部、日本。",
+   "fact": "这种海马最初是在采集的柳珊瑚上被偶然发现的。",
+   "tips": [
+    "请向向导询问位置，自己很难找到。",
+    "不要用手去触碰柳珊瑚，也不要用闪光灯连续拍摄。"
+   ],
+   "image": "pygmy-seahorse",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "frogfish",
+   "nameZh": "躄鱼（康氏躄鱼）",
+   "nameEn": "Commerson's frogfish",
+   "scientific": "Antennarius commersoni",
+   "category": "reefFish",
+   "family": "躄鱼科 Antennariidae",
+   "summary": "圆胖的伏击者，头顶有一根像钓竿的拟饵。",
+   "features": [
+    "身体圆胖，不善游泳",
+    "头顶有钓竿状的拟饵",
+    "用胸鳍和腹鳍在底上“行走”",
+    "体色可以变化"
+   ],
+   "similar": "与其他躄鱼外形近似，且体色多变，常需要看体表花纹与拟饵形状细节。",
+   "habitat": "礁石、海绵和沉船附近的底质上。",
+   "diet": "肉食，吃小鱼和甲壳类。",
+   "behavior": "静止伪装，等猎物靠近后极快地吞下。",
+   "distribution": "印度洋-太平洋热带海域。",
+   "fact": "躄鱼的吞咬动作非常快，是已知最快的捕食动作之一。",
+   "tips": [
+    "先找形状像海绵或石块的东西。",
+    "动作要慢，别碰它。"
+   ],
+   "image": "frogfish",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "blacktip-reef-shark",
+   "nameZh": "黑鳍礁鲨",
+   "nameEn": "Blacktip reef shark",
+   "scientific": "Carcharhinus melanopterus",
+   "category": "sharksRays",
+   "family": "真鲨科 Carcharhinidae",
+   "summary": "浅礁区最常见的礁鲨之一，各鳍尖端有黑色。",
+   "features": [
+    "各鳍尖端为黑色，第一背鳍尖端最明显",
+    "背鳍黑尖下方有一圈白色",
+    "体长通常 1.6 米以内"
+   ],
+   "similar": "与白鳍礁鲨的区别是鳍尖颜色：黑鳍礁鲨为黑色，白鳍礁鲨为白色。",
+   "habitat": "浅水的礁平台、潟湖和礁坡。",
+   "diet": "吃小型鱼类、头足类和甲壳类。",
+   "behavior": "通常在浅水游动，背鳍有时露出水面。",
+   "distribution": "印度洋-太平洋热带水域。",
+   "fact": "它们常在浅水区活动，被认为对潜水员威胁较低，但仍需保持尊重。",
+   "tips": [
+    "保持距离，不要追逐或投喂。"
+   ],
+   "image": "blacktip-reef-shark",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "whitetip-reef-shark",
+   "nameZh": "白鳍礁鲨",
+   "nameEn": "Whitetip reef shark",
+   "scientific": "Triaenodon obesus",
+   "category": "sharksRays",
+   "family": "真鲨科 Carcharhinidae",
+   "summary": "白天常趴在礁洞或沙地上休息，夜间捕猎。",
+   "features": [
+    "第一背鳍和尾鳍上叶尖端为白色",
+    "身体细长，头部短而宽扁",
+    "体长通常在 1.6 米以内"
+   ],
+   "similar": "与黑鳍礁鲨区别在于鳍尖为白色。",
+   "habitat": "珊瑚礁、礁洞和沙地。",
+   "diet": "吃鱼类、章鱼和甲壳类。",
+   "behavior": "白天常静止在洞穴或岩石下，夜间更活跃。",
+   "distribution": "印度洋-太平洋热带水域。",
+   "fact": "它们能躺在底部静止呼吸，不需要一直游动。",
+   "tips": [
+    "不要靠近它休息的洞穴，别挡住出口。"
+   ],
+   "image": "whitetip-reef-shark",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "bluespotted-ribbontail-ray",
+   "nameZh": "蓝斑条尾魟",
+   "nameEn": "Bluespotted ribbontail ray",
+   "scientific": "Taeniura lymma",
+   "category": "sharksRays",
+   "family": "魟科 Dasyatidae",
+   "summary": "身上布满亮蓝斑点的小型魟，常在沙地上觅食。",
+   "features": [
+    "背部有明亮的蓝色圆斑",
+    "尾部两侧各有一条蓝色条纹",
+    "尾部有毒刺"
+   ],
+   "similar": "体盘上的蓝色圆斑与尾侧蓝纹是区分它与其他魟类的明显特征。",
+   "habitat": "珊瑚礁边缘的沙地，也会躲在珊瑚洞里。",
+   "diet": "吃底栖的甲壳类、软体动物和小鱼。",
+   "behavior": "潮涨时进入浅水觅食，休息时躲在礁石下。",
+   "distribution": "印度洋-太平洋热带水域。",
+   "fact": "毒刺位于尾部，主要用于自卫。",
+   "tips": [
+    "不要踩踏沙地，注意尾部毒刺。",
+    "在礁石下方寻找它们休息的地方。"
+   ],
+   "image": "bluespotted-ribbontail-ray",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "green-sea-turtle",
+   "nameZh": "绿海龟",
+   "nameEn": "Green sea turtle",
+   "scientific": "Chelonia mydas",
+   "category": "turtles",
+   "family": "海龟科 Cheloniidae",
+   "summary": "在热带与亚热带海域广泛分布的大型海龟，成体以海草和藻类为食。",
+   "features": [
+    "背甲较平滑，头部较小",
+    "前额有一对前额鳞",
+    "体型大，成体背甲长度可超过 1 米"
+   ],
+   "similar": "与玳瑁的区别：绿海龟前额只有一对鳞片，嘴也不尖。",
+   "habitat": "珊瑚礁和海草床。",
+   "diet": "成体主要吃海草和藻类。",
+   "behavior": "会长距离洄游，雌龟回到出生地附近的沙滩产卵。",
+   "distribution": "全球热带与亚热带海域。",
+   "fact": "绿海龟因体内脂肪呈绿色而得名。",
+   "tips": [
+    "保持 3 米以上距离，不要触碰或骑乘。",
+    "不要挡住它上浮换气的路线。"
+   ],
+   "image": "green-sea-turtle",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "hawksbill-sea-turtle",
+   "nameZh": "玳瑁",
+   "nameEn": "Hawksbill sea turtle",
+   "scientific": "Eretmochelys imbricata",
+   "category": "turtles",
+   "family": "海龟科 Cheloniidae",
+   "summary": "嘴像鹰喙的海龟，背甲鳞片像瓦片一样叠在一起。",
+   "features": [
+    "嘴尖而窄，像鹰喙",
+    "背甲鳞片像瓦片一样重叠",
+    "前额有两对前额鳞"
+   ],
+   "similar": "与绿海龟的区别：玳瑁嘴尖、鳞片重叠，前额有两对鳞片。",
+   "habitat": "珊瑚礁。",
+   "diet": "主要吃海绵。",
+   "behavior": "白天常在礁石间觅食和休息。",
+   "distribution": "全球热带海域。",
+   "fact": "玳瑁主要吃海绵，对珊瑚礁生态很重要。国际自然保护联盟（IUCN）将其列为极危。",
+   "tips": [
+    "保持距离，不要触碰。"
+   ],
+   "image": "hawksbill-sea-turtle",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "chromodoris-strigata",
+   "nameZh": "条纹多彩海蛞蝓",
+   "nameEn": "Striped chromodoris",
+   "scientific": "Chromodoris strigata",
+   "category": "nudibranchs",
+   "family": "多彩海牛科 Chromodorididae",
+   "summary": "身体带有纵向条纹的海蛞蝓，是菲律宾潜水中常见的微距主角。",
+   "features": [
+    "身体上有明显纵向条纹",
+    "背部有羽毛状的鳃，头部有一对嗅角",
+    "颜色鲜艳"
+   ],
+   "similar": "多彩海牛类外形相近，需要看条纹的颜色与排列。",
+   "habitat": "珊瑚礁的礁石和海绵附近。",
+   "diet": "吃海绵。",
+   "behavior": "缓慢爬行，鲜艳颜色通常是警戒色。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "海蛞蝓羽毛状的鳃用来呼吸，嗅角用来闻味。",
+   "tips": [
+    "请带上微距镜头，寻找礁石上的小个体。",
+    "不要触碰。"
+   ],
+   "image": "chromodoris-strigata",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "nembrotha-kubaryana",
+   "nameZh": "库氏 Nembrotha 海蛞蝓",
+   "nameEn": "Nembrotha kubaryana",
+   "scientific": "Nembrotha kubaryana",
+   "category": "nudibranchs",
+   "family": "多角海牛科 Polyceridae",
+   "summary": "体色深、带有鲜艳斑纹的大型海蛞蝓。",
+   "features": [
+    "体色较深，带有绿色或橙色的斑纹",
+    "背部有羽状的鳃，头部有一对嗅角",
+    "体型比许多海蛞蝓大"
+   ],
+   "similar": "Nembrotha 属内的几种外形相近，需要对照颜色与斑纹。",
+   "habitat": "珊瑚礁和礁石。",
+   "diet": "吃海鞘。",
+   "behavior": "缓慢爬行在礁石上，寻找海鞘。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "Nembrotha 属的海蛞蝓以海鞘为食。",
+   "tips": [
+    "在礁石或海鞘附近仔细寻找。"
+   ],
+   "image": "nembrotha-kubaryana",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "coconut-octopus",
+   "nameZh": "椰子章鱼",
+   "nameEn": "Coconut octopus",
+   "scientific": "Amphioctopus marginatus",
+   "category": "cephalopods",
+   "family": "章鱼科 Octopodidae",
+   "summary": "会拿椰壳和贝壳当“家”的章鱼，常在沙泥底出没。",
+   "features": [
+    "体型中小，体色可变",
+    "身上有一圈颜色不同的边缘",
+    "常带着椰壳或贝壳"
+   ],
+   "similar": "与其他沙泥底的小章鱼相比，会搬运椰壳是它最有辨识度的特点。",
+   "habitat": "沙泥底和碎石区。",
+   "diet": "吃螃蟹、虾和双壳类。",
+   "behavior": "会搬运椰壳或贝壳，当作藏身处。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "科学家曾观察到它们搬运椰壳，被视为章鱼使用工具的例子。",
+   "tips": [
+    "在沙泥底寻找椰壳或蚌壳。",
+    "不要翻动它的藏身处。"
+   ],
+   "image": "coconut-octopus",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "broadclub-cuttlefish",
+   "nameZh": "阔腕乌贼",
+   "nameEn": "Broadclub cuttlefish",
+   "scientific": "Sepia latimanus",
+   "category": "cephalopods",
+   "family": "乌贼科 Sepiidae",
+   "summary": "体型大、会快速变色的乌贼，在珊瑚礁上游动。",
+   "features": [
+    "体型大，身体两侧有裙边",
+    "眼睛后方有明显花纹",
+    "体色和花纹会快速变化"
+   ],
+   "similar": "与其他乌贼的区别主要在体型和腕的形态。",
+   "habitat": "珊瑚礁。",
+   "diet": "吃鱼类和甲壳类。",
+   "behavior": "会用变色来伪装与交流。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "乌贼有三个心脏，血液呈蓝色。",
+   "tips": [
+    "保持安静，慢慢靠近。"
+   ],
+   "image": "broadclub-cuttlefish",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "wunderpus",
+   "nameZh": "奇异章鱼",
+   "nameEn": "Wunderpus",
+   "scientific": "Wunderpus photogenicus",
+   "category": "cephalopods",
+   "family": "章鱼科 Octopodidae",
+   "summary": "以棕白条纹和长腕著称，是东南亚沙泥底的人气生物。",
+   "features": [
+    "棕白相间的条纹",
+    "腕细长",
+    "眼睛上方有明显的“假眼”"
+   ],
+   "similar": "与拟态章鱼外形相似，但 Wunderpus 的条纹更细而规则。",
+   "habitat": "沙泥底。",
+   "diet": "吃小鱼和甲壳类。",
+   "behavior": "会模拟其他动物的姿态。",
+   "distribution": "印度尼西亚、菲律宾、巴布亚新几内亚。",
+   "fact": "它们能够模仿其他海洋生物的外形。",
+   "tips": [
+    "耐心在沙泥底寻找，常躲在洞中。"
+   ],
+   "image": "wunderpus",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "peacock-mantis-shrimp",
+   "nameZh": "孔雀螳螂虾",
+   "nameEn": "Peacock mantis shrimp",
+   "scientific": "Odontodactylus scyllarus",
+   "category": "crustaceans",
+   "family": "齿指虾蛄科 Odontodactylidae",
+   "summary": "颜色鲜艳、出拳极快的底栖甲壳类。",
+   "features": [
+    "绿色、橙色与蓝色相间",
+    "前肢呈棒状",
+    "复眼突出，可以独立转动"
+   ],
+   "similar": "与其他螳螂虾相比，孔雀螳螂虾的颜色最鲜艳。",
+   "habitat": "沙泥底和碎石区，在洞穴中生活。",
+   "diet": "吃螃蟹、贝类等。",
+   "behavior": "会躲在洞里，用前肢快速出击。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "它的前肢出击速度极快，能击碎贝壳。",
+   "tips": [
+    "不要把手伸进它的洞穴。"
+   ],
+   "image": "peacock-mantis-shrimp",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "ambon-cleaner-shrimp",
+   "nameZh": "安汶清洁虾",
+   "nameEn": "Ambon cleaner shrimp",
+   "scientific": "Lysmata amboinensis",
+   "category": "crustaceans",
+   "family": "藻虾科 Lysmatidae",
+   "summary": "站在礁石上，帮鱼清除寄生虫的小虾。",
+   "features": [
+    "红色身体，背部中线有白色条纹",
+    "白色长触须",
+    "体型小"
+   ],
+   "similar": "与其他清洁虾相比，背部白色中线和红色体色是典型特征。",
+   "habitat": "珊瑚礁的洞穴和礁石下。",
+   "diet": "吃寄生虫和鱼身上的碎屑。",
+   "behavior": "在“清洁站”里为鱼服务。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "清洁虾会摆动触须吸引鱼靠近。",
+   "tips": [
+    "在礁石缝里仔细寻找，它们会站在洞口。"
+   ],
+   "image": "ambon-cleaner-shrimp",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "acropora",
+   "nameZh": "鹿角珊瑚属",
+   "nameEn": "Staghorn and table corals",
+   "scientific": "Acropora",
+   "category": "corals",
+   "family": "鹿角珊瑚科 Acroporidae",
+   "summary": "造礁珊瑚的主力，常见分枝或桌状。",
+   "features": [
+    "分枝状、桌状或板状群体",
+    "表面有许多细小的珊瑚虫",
+    "颜色多为棕色、黄色或绿色"
+   ],
+   "similar": "同一属下有上百种，肉眼很难区分到种。",
+   "habitat": "光线充足、水流较好的礁坡和礁平台。",
+   "diet": "与虫黄藻共生，也会捕食浮游生物。",
+   "behavior": "对水温升高很敏感，会白化。",
+   "distribution": "全球热带海域。",
+   "fact": "鹿角珊瑚是造礁珊瑚中种类最多的一个属。",
+   "tips": [
+    "不要踩踏或触碰珊瑚。",
+    "注意中性浮力。"
+   ],
+   "image": "acropora",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "fire-coral",
+   "nameZh": "千孔珊瑚（火珊瑚）",
+   "nameEn": "Fire coral",
+   "scientific": "Millepora",
+   "category": "corals",
+   "family": "千孔螅科 Milleporidae",
+   "summary": "看起来像珊瑚，其实是水螅，接触会有灼痛感。",
+   "features": [
+    "黄褐色，边缘常呈白色",
+    "表面光滑，密布细小孔",
+    "形状多样，有板状和分枝状"
+   ],
+   "similar": "外形像石珊瑚，但实际属于水螅纲。",
+   "habitat": "珊瑚礁的浅水区。",
+   "diet": "与虫黄藻共生，也会捕食浮游生物。",
+   "behavior": "接触时刺细胞会引起灼痛。",
+   "distribution": "全球热带海域。",
+   "fact": "它不是真正的珊瑚，属于水螅纲。",
+   "tips": [
+    "不要触碰，接触会引起疼痛。"
+   ],
+   "image": "fire-coral",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "giant-clam",
+   "nameZh": "大砗磲",
+   "nameEn": "Giant clam",
+   "scientific": "Tridacna gigas",
+   "category": "other",
+   "family": "砗磲科 Cardiidae",
+   "summary": "世界上最大的双壳类，外套膜色彩斑斓。",
+   "features": [
+    "外壳很大，边缘呈波浪形",
+    "外套膜颜色鲜艳",
+    "壳可达 1 米以上"
+   ],
+   "similar": "与其他砗磲相比，大砗磲体型最大。",
+   "habitat": "珊瑚礁的浅水区。",
+   "diet": "与虫黄藻共生，也会滤食。",
+   "behavior": "固定在底质上，受惊时会合上壳。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "大砗磲是世界上最大的双壳类。国际自然保护联盟（IUCN）将其列为易危。",
+   "tips": [
+    "不要触碰它的外套膜。"
+   ],
+   "image": "giant-clam",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "banded-sea-krait",
+   "nameZh": "蓝灰扁尾海蛇",
+   "nameEn": "Banded sea krait",
+   "scientific": "Laticauda colubrina",
+   "category": "other",
+   "family": "眼镜蛇科 Elapidae",
+   "summary": "半水栖的海蛇，需要上岸休息和繁殖。",
+   "features": [
+    "蓝灰色身体，带有黑色环带",
+    "吻部黄色",
+    "尾部扁平"
+   ],
+   "similar": "身上的黑色环带是它的显著特征。",
+   "habitat": "珊瑚礁和近岸礁石。",
+   "diet": "主要捕食鳗类。",
+   "behavior": "会在水里觅食，需要上岸消化、蜕皮和产卵。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "蓝灰扁尾海蛇毒性强，但性情温和。",
+   "tips": [
+    "保持距离，不要触碰。"
+   ],
+   "image": "banded-sea-krait",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  },
+  {
+   "id": "humphead-parrotfish",
+   "nameZh": "隆头鹦哥鱼",
+   "nameEn": "Bumphead parrotfish",
+   "scientific": "Bolbometopon muricatum",
+   "category": "reefFish",
+   "family": "鹦嘴鱼科 Scaridae",
+   "summary": "体型最大的鹦嘴鱼，额头隆起成块。",
+   "features": [
+    "额头有隆起的骨质突起",
+    "体型大，长可超过 1 米",
+    "成群活动"
+   ],
+   "similar": "与其他鹦嘴鱼相比，隆起的额头与大体型最为明显。",
+   "habitat": "珊瑚礁。",
+   "diet": "啃食珊瑚和藻类。",
+   "behavior": "成群活动，夜间在礁洞或沉船里睡觉。",
+   "distribution": "印度洋-太平洋。",
+   "fact": "国际自然保护联盟（IUCN）将其列为易危。",
+   "tips": [
+    "保持距离，别追逐。"
+   ],
+   "image": "humphead-parrotfish",
+   "sources": "WoRMS、FishBase、Wikipedia 等公开资料"
+  }
+ ],
+ "links": [
+  {
+   "siteID": "dauin",
+   "speciesID": "frogfish",
+   "evidence": "common"
+  },
+  {
+   "siteID": "dauin",
+   "speciesID": "mandarinfish",
+   "evidence": "common"
+  },
+  {
+   "siteID": "dauin",
+   "speciesID": "coconut-octopus",
+   "evidence": "common"
+  },
+  {
+   "siteID": "dauin",
+   "speciesID": "wunderpus",
+   "evidence": "common"
+  },
+  {
+   "siteID": "dauin",
+   "speciesID": "pygmy-seahorse",
+   "evidence": "range"
+  },
+  {
+   "siteID": "dauin",
+   "speciesID": "chromodoris-strigata",
+   "evidence": "range"
+  },
+  {
+   "siteID": "dauin",
+   "speciesID": "ocellaris-clownfish",
+   "evidence": "range"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "green-sea-turtle",
+   "evidence": "common"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "banded-sea-krait",
+   "evidence": "common"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "hawksbill-sea-turtle",
+   "evidence": "range"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "acropora",
+   "evidence": "common"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "fire-coral",
+   "evidence": "range"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "giant-clam",
+   "evidence": "range"
+  },
+  {
+   "siteID": "apo",
+   "speciesID": "ocellaris-clownfish",
+   "evidence": "range"
+  },
+  {
+   "siteID": "moalboal",
+   "speciesID": "green-sea-turtle",
+   "evidence": "common"
+  },
+  {
+   "siteID": "moalboal",
+   "speciesID": "acropora",
+   "evidence": "common"
+  },
+  {
+   "siteID": "moalboal",
+   "speciesID": "ocellaris-clownfish",
+   "evidence": "range"
+  },
+  {
+   "siteID": "moalboal",
+   "speciesID": "blacktip-reef-shark",
+   "evidence": "range"
+  },
+  {
+   "siteID": "moalboal",
+   "speciesID": "whitetip-reef-shark",
+   "evidence": "range"
+  },
+  {
+   "siteID": "moalboal",
+   "speciesID": "bluespotted-ribbontail-ray",
+   "evidence": "range"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "chromodoris-strigata",
+   "evidence": "common"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "nembrotha-kubaryana",
+   "evidence": "common"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "pygmy-seahorse",
+   "evidence": "common"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "frogfish",
+   "evidence": "common"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "broadclub-cuttlefish",
+   "evidence": "common"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "banded-sea-krait",
+   "evidence": "range"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "peacock-mantis-shrimp",
+   "evidence": "range"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "ambon-cleaner-shrimp",
+   "evidence": "range"
+  },
+  {
+   "siteID": "anilao",
+   "speciesID": "coconut-octopus",
+   "evidence": "range"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "humphead-parrotfish",
+   "evidence": "common"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "red-lionfish",
+   "evidence": "common"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "blacktip-reef-shark",
+   "evidence": "range"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "bluespotted-ribbontail-ray",
+   "evidence": "range"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "giant-clam",
+   "evidence": "range"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "ambon-cleaner-shrimp",
+   "evidence": "range"
+  },
+  {
+   "siteID": "tulamben",
+   "speciesID": "fire-coral",
+   "evidence": "range"
+  }
+ ],
+ "daily": [
+  {
+   "id": "d0",
+   "title": "绿海龟靠什么得名？",
+   "fact": "绿海龟因体内脂肪呈绿色而得名，成体主要吃海草和藻类。",
+   "speciesID": "green-sea-turtle",
+   "image": "green-sea-turtle"
+  },
+  {
+   "id": "d1",
+   "title": "会搬家的章鱼",
+   "fact": "椰子章鱼会搬运椰壳或贝壳，当作随身的藏身处。",
+   "speciesID": "coconut-octopus",
+   "image": "coconut-octopus"
+  },
+  {
+   "id": "d2",
+   "title": "清洁站里的小虾",
+   "fact": "清洁虾会摆动触须，吸引鱼停下来让它清除寄生虫。",
+   "speciesID": "ambon-cleaner-shrimp",
+   "image": "ambon-cleaner-shrimp"
+  },
+  {
+   "id": "d3",
+   "title": "小丑鱼的性别",
+   "fact": "小丑鱼出生时都是雄性，群体里最大的会变成雌鱼。",
+   "speciesID": "ocellaris-clownfish",
+   "image": "ocellaris-clownfish"
+  },
+  {
+   "id": "d4",
+   "title": "会隐身的海马",
+   "fact": "豆丁海马的体色和瘤状突起，与它栖息的柳珊瑚几乎一致。",
+   "speciesID": "pygmy-seahorse",
+   "image": "pygmy-seahorse"
+  },
+  {
+   "id": "d5",
+   "title": "它不是真的珊瑚",
+   "fact": "千孔珊瑚属于水螅，接触会有灼痛感。",
+   "speciesID": "fire-coral",
+   "image": "fire-coral"
+  },
+  {
+   "id": "d6",
+   "title": "最大的双壳类",
+   "fact": "大砗磲是世界上最大的双壳类，外套膜色彩斑斓。",
+   "speciesID": "giant-clam",
+   "image": "giant-clam"
+  }
+ ],
+ "credits": [
+  {
+   "image": "acropora",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Coral_(Acropora_hemprichii),_Ras_Katy,_Sharm_el-Sheij,_Egipto,_2022-03-26,_DD_108.jpg"
+  },
+  {
+   "image": "ambon-cleaner-shrimp",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Camar%C3%B3n_limpiador_del_Pac%C3%ADfico_(Lysmata_amboinensis),_Zanz%C3%ADbar,_Tanzania,_2024-05-30,_DD_09.jpg"
+  },
+  {
+   "image": "banded-sea-krait",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Serpiente_marina_de_hocico_ancho_(Laticauda_colubrina),_Anilao,_Filipinas,_2023-08-23,_DD_04.jpg"
+  },
+  {
+   "image": "blacktip-reef-shark",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Blacktip_reef_shark_(Carcharhinus_melanopterus)_Moorea.jpg"
+  },
+  {
+   "image": "bluespotted-ribbontail-ray",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Raya_de_arrecife_(Taeniura_lymma),_mar_Rojo,_Egipto,_2023-04-14,_DD_64.jpg"
+  },
+  {
+   "image": "broadclub-cuttlefish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ascarosepion_de_arrecife_(Ascarosepion_latimanus),_Anilao,_Filipinas,_2023-08-22,_DD_48.jpg"
+  },
+  {
+   "image": "chromodoris-strigata",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Babosas_de_mar_(Chromodoris_strigata),_Anilao,_Filipinas,_2023-08-22,_DD_172.jpg"
+  },
+  {
+   "image": "coconut-octopus",
+   "author": "Rickard Zerpe",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Coconut_octopus_(Amphioctopus_marginatus)_(45031078485).jpg"
+  },
+  {
+   "image": "fire-coral",
+   "author": "Photo2222",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Millepora_fire_coral.JPG"
+  },
+  {
+   "image": "frogfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ranisapo_de_Commerson_(Antennarius_commerson),_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_10.jpg"
+  },
+  {
+   "image": "giant-clam",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Giant_clam_(Tridacna_gigas)_Michaelmas_Cay.jpg"
+  },
+  {
+   "image": "green-sea-turtle",
+   "author": "Brocken Inaglory",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Total_internal_reflection_of_Chelonia_mydas.jpg"
+  },
+  {
+   "image": "hawksbill-sea-turtle",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tortuga_carey_(Eretmochelys_imbricata),_parque_nacional_Ras_Muhammad,_Egipto,_2022-03-28,_DD_56.jpg"
+  },
+  {
+   "image": "hero",
+   "author": "Ppmh21",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sunrise_Green_turtle.jpg"
+  },
+  {
+   "image": "humphead-parrotfish",
+   "author": "Rickard Zerpe",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bumphead_parrotfish_(Bolbometopon_muricatum)_(49509140173).jpg"
+  },
+  {
+   "image": "mandarinfish",
+   "author": "Luc Viatour",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Synchiropus_splendidus_2_Luc_Viatour.jpg"
+  },
+  {
+   "image": "nembrotha-kubaryana",
+   "author": "Nhobgood Nick Hobgood",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Nembrotha_kubaryana_(Nudibranch).jpg"
+  },
+  {
+   "image": "ocellaris-clownfish",
+   "author": "Ritiks",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Clown_fish_in_the_Andaman_Coral_Reef.jpg"
+  },
+  {
+   "image": "peacock-mantis-shrimp",
+   "author": "Jens Petersen",
+   "license": "CC BY 2.5",
+   "source": "https://commons.wikimedia.org/wiki/File:Odontodactylus_scyllarus1.jpg"
+  },
+  {
+   "image": "pygmy-seahorse",
+   "author": "Steve Childs",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Hippocampus_bargabanti.jpg"
+  },
+  {
+   "image": "red-lionfish",
+   "author": "Michael Gäbler",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Common_lion_fish_Pterois_volitans.jpg"
+  },
+  {
+   "image": "site-anilao",
+   "author": "andre oortgijs",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dive_Solana_Anilao_Batangas_-_panoramio.jpg"
+  },
+  {
+   "image": "site-apo",
+   "author": "Anna Varona",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sea_Turtle_in_Apo_Island.jpg"
+  },
+  {
+   "image": "site-dauin",
+   "author": "Cristian Bortes",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dauin_beach_2.jpg"
+  },
+  {
+   "image": "site-moalboal",
+   "author": "Iampjanz",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sardine_run_over_seafloor_in_Moalboal_01.jpg"
+  },
+  {
+   "image": "site-tulamben",
+   "author": "G patkar",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:USAT_Liberty_Wreck_Dive.jpg"
+  },
+  {
+   "image": "whitetip-reef-shark",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tibur%C3%B3n_de_arrecife_de_punta_blanca_(Triaenodon_obesus),_Nosy_Tanikely,_Madagascar,_2025-09-19,_DD_110.jpg"
+  },
+  {
+   "image": "wunderpus",
+   "author": "Jenny (JennyHuang) from Taipei",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Wunderpus_photogenicus.jpg"
+  }
+ ]
+}
