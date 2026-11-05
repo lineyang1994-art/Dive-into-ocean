@@ -31,8 +31,11 @@ struct SiteListView: View {
                     LazyVStack(spacing: 16) {
                         ForEach(filtered) { s in
                             NavigationLink(value: Route.site(s.id)) {
-                                SitePhotoCard(site: s, height: 220)
-                                    .overlay(alignment: .bottomTrailing) { Text("代表生物 \(catalog.species(at: s.id).count) 种").font(.caption).foregroundStyle(.white).padding(16) }
+                                let n = catalog.species(at: s.id).count
+                                SitePhotoCard(site: s, height: s.isCurated ? 220 : 120)
+                                    .overlay(alignment: .bottomTrailing) {
+                                        Text(s.isCurated ? "代表生物 \(n) 种" : (n > 0 ? "观测记录 \(n) 种" : "暂无物种记录")).font(.caption).foregroundStyle(.white).padding(16)
+                                    }
                             }.buttonStyle(.plain)
                         }
                     }
@@ -92,20 +95,43 @@ struct SiteDetailView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 28) {
                     ZStack(alignment: .bottomTrailing) {
-                        BundledImage(name: site.image).frame(maxWidth: .infinity).aspectRatio(4/3, contentMode: .fit).clipped()
+                        BundledImage(name: site.image).frame(maxWidth: .infinity).aspectRatio(site.isCurated ? 4/3 : 16/9, contentMode: .fit).clipped()
                         if let c = catalog.credit(site.image) {
                             Text("照片：\(c.author) / \(c.license)").font(.caption2).padding(6).background(.ultraThinMaterial, in: Capsule()).padding(8)
                         }
                     }
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(site.nameZh).font(.display).foregroundStyle(Theme.ink)
-                        Text("\(site.name) · \(site.place)").font(.subheadline).foregroundStyle(Theme.inkSecondary)
+                        Text(site.isCurated ? site.nameZh : site.name).font(.display).foregroundStyle(Theme.ink)
+                        Text(site.isCurated ? "\(site.name) · \(site.place)" : site.place).font(.subheadline).foregroundStyle(Theme.inkSecondary)
+                        if let d = site.depth { Text("最大深度约 \(d) 米").font(.subheadline).foregroundStyle(Theme.inkSecondary) }
                         HStack { ForEach(site.types, id: \.self) { TagText(text: $0) } }
                     }.padding(.horizontal, Theme.margin)
-                    section("简介") { Text(site.summary).foregroundStyle(Theme.ink) }
-                    section("潜水环境") { BulletList(items: site.characteristics) }
+                    if site.isCurated {
+                        section("简介") { Text(site.summary).foregroundStyle(Theme.ink) }
+                        section("潜水环境") { BulletList(items: site.characteristics) }
+                    }
+                    if spList.isEmpty {
+                        let reg = catalog.regionalSpecies(at: siteID)
+                        VStack(alignment: .leading, spacing: 12) {
+                            SectionHeader(title: "物种", subtitle: nil).padding(.horizontal, Theme.margin)
+                            if reg.isEmpty {
+                                Text("暂无物种记录").foregroundStyle(Theme.inkSecondary).padding(.horizontal, Theme.margin)
+                            } else {
+                                Text("这个点附近暂无公开的观测记录。下面是\(site.country)其他潜点的常见观测物种，不代表这个点一定能看到。").font(.footnote).foregroundStyle(Theme.inkSecondary).padding(.horizontal, Theme.margin)
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    LazyHStack(alignment: .top, spacing: 12) {
+                                        ForEach(reg, id: \.0.id) { sp, link in
+                                            NavigationLink(value: Route.species(sp.id)) {
+                                                VStack(alignment: .leading, spacing: 4) { SpeciesCard(species: sp); TagText(text: link.evidenceLabel) }
+                                            }.buttonStyle(.plain)
+                                        }
+                                    }.padding(.horizontal, Theme.margin)
+                                }
+                            }
+                        }
+                    } else {
                     VStack(alignment: .leading, spacing: 12) {
-                        SectionHeader(title: "可能遇见的生物", subtitle: "共 \(spList.count) 种").padding(.horizontal, Theme.margin)
+                        SectionHeader(title: site.isCurated ? "可能遇见的生物" : "观测记录里的物种", subtitle: "共 \(spList.count) 种").padding(.horizontal, Theme.margin)
                         ScrollView(.horizontal, showsIndicators: false) {
                             LazyHStack(alignment: .top, spacing: 12) {
                                 ForEach(spList, id: \.0.id) { sp, link in
@@ -117,8 +143,10 @@ struct SiteDetailView: View {
                         }
                         NavigationLink(value: Route.library(siteID: siteID)) { Text("查看全部 \(spList.count) 种").font(.subheadline).frame(minHeight: 44) }
                             .padding(.horizontal, Theme.margin)
-                        Text("生物清单来自公开资料，仅供参考，实际遇见情况因季节与天气而异。").font(.caption).foregroundStyle(Theme.inkSecondary).padding(.horizontal, Theme.margin)
+                        Text(site.isCurated ? "生物清单来自公开资料，仅供参考，实际遇见情况因季节与天气而异。" : "来自公开的观测记录（GBIF，CC0 或 CC BY），只代表这个点 2 公里内有人记录过，不代表一定能遇见。").font(.caption).foregroundStyle(Theme.inkSecondary).padding(.horizontal, Theme.margin)
                     }
+                    }
+                    if let c = site.credit { Text("潜点数据：\(c)").font(.caption).foregroundStyle(Theme.inkSecondary).padding(.horizontal, Theme.margin) }
                     section("我在这里的日志") {
                         if siteLogs.isEmpty {
                             EmptyState(symbol: "book.closed", title: "还没有在这里的日志", button: "写一篇日志") { startLog(siteID) }

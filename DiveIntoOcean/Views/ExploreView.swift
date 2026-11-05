@@ -130,7 +130,7 @@ struct ExploreView: View {
             SectionHeader(title: "热门潜点", subtitle: "Dive Sites", action: "全部") { path.append(Route.sites) }.padding(.horizontal, Theme.margin)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: 12) {
-                    ForEach(catalog.sites) { s in
+                    ForEach(catalog.sites.filter(\.isCurated)) { s in
                         Button { path.append(Route.site(s.id)) } label: { SitePhotoCard(site: s, width: 240, height: 320) }
                             .buttonStyle(.plain)
                             .accessibilityLabel("\(s.name)，\(s.place)")
@@ -145,7 +145,7 @@ struct ExploreView: View {
             SectionHeader(title: "海洋生物", subtitle: "Marine Life", action: "全部") { path.append(Route.library(siteID: nil)) }.padding(.horizontal, Theme.margin)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(alignment: .top, spacing: 12) {
-                    ForEach(catalog.species.prefix(10)) { sp in
+                    ForEach(catalog.species.filter(\.curated).prefix(10)) { sp in
                         Button { path.append(Route.species(sp.id)) } label: { SpeciesCard(species: sp) }.buttonStyle(.plain)
                     }
                 }.padding(.horizontal, Theme.margin)

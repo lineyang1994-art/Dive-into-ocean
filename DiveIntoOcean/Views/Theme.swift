@@ -37,7 +37,12 @@ extension View {
 struct BundledImage: View {
     let name: String
     var body: some View {
-        if let img = ImageStore.bundled(name) {
+        if name.isEmpty {
+            ZStack {
+                LinearGradient(colors: [Color(red: 0.03, green: 0.17, blue: 0.25), Color(red: 0.03, green: 0.50, blue: 0.55)], startPoint: .bottom, endPoint: .top)
+                Image(systemName: "water.waves").font(.largeTitle).foregroundStyle(.white.opacity(0.35))
+            }
+        } else if let img = ImageStore.bundled(name) {
             Color.clear.overlay { Image(uiImage: img).resizable().scaledToFill() }.clipped()
         } else {
             ZStack {
@@ -260,8 +265,8 @@ struct SpeciesCard: View {
         VStack(alignment: .leading, spacing: 6) {
             BundledImage(name: species.image).frame(width: width, height: width).clipShape(RoundedRectangle(cornerRadius: 16))
             Text(species.nameZh).font(.headline).foregroundStyle(Theme.ink).lineLimit(2)
-            Text(species.nameEn).font(.caption).foregroundStyle(Theme.inkSecondary).lineLimit(1)
-            Text(species.scientific).font(.caption.italic()).foregroundStyle(Theme.inkSecondary).lineLimit(1)
+            if species.curated { Text(species.nameEn).font(.caption).foregroundStyle(Theme.inkSecondary).lineLimit(1) }
+            if species.nameZh != species.scientific { Text(species.scientific).font(.caption.italic()).foregroundStyle(Theme.inkSecondary).lineLimit(1) }
         }
         .frame(width: width, alignment: .leading)
     }

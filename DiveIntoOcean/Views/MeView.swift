@@ -165,8 +165,13 @@ struct CreditsView: View {
     var body: some View {
         List {
             Section { Text("图鉴与潜点照片来自 Wikimedia Commons，按各自的许可使用").font(.subheadline) }
+            Section("数据来源与许可") {
+                Text("潜点：© OpenDiveMap contributors（ODbL）；© OpenStreetMap contributors（ODbL）").font(.caption)
+                Text("物种观测记录：GBIF，只使用 CC0 或 CC BY 许可的记录").font(.caption)
+                Text("学名核对：WoRMS（CC BY 4.0）").font(.caption)
+            }
             Section {
-                ForEach(Catalog.shared.data.credits, id: \.image) { c in
+                ForEach(Catalog.shared.allCredits, id: \.image) { c in
                     Link(destination: URL(string: c.source)!) {
                         VStack(alignment: .leading) { Text(c.author).foregroundStyle(Theme.ink); Text("\(c.license) · \(c.image)").font(.caption).foregroundStyle(Theme.inkSecondary) }
                     }

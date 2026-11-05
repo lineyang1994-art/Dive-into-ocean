@@ -106,10 +106,10 @@ struct SpeciesDetailView: View {
                     }
                     VStack(alignment: .leading, spacing: 6) {
                         Text(sp.nameZh).font(.display).foregroundStyle(Theme.ink)
-                        Text(sp.nameEn).font(.subheadline).foregroundStyle(Theme.ink)
+                        if sp.nameEn != sp.nameZh { Text(sp.nameEn).font(.subheadline).foregroundStyle(Theme.ink) }
                         Text(sp.scientific).font(.subheadline.italic()).foregroundStyle(Theme.inkSecondary)
                         HStack { TagText(text: sp.category.zh); Text(sp.family).font(.caption).foregroundStyle(Theme.inkSecondary) }.padding(.top, 4)
-                        Text(sp.summary).foregroundStyle(Theme.ink).padding(.top, 6)
+                        Text(sp.summary).foregroundStyle(sp.curated ? Theme.ink : Theme.inkSecondary).padding(.top, 6)
                     }.padding(.horizontal, Theme.margin)
 
                     VStack(alignment: .leading, spacing: 10) {
@@ -127,6 +127,10 @@ struct SpeciesDetailView: View {
                         }
                     }.padding(.horizontal, Theme.margin)
 
+                    if !sp.curated {
+                        block("资料") { Text("识别特征、生态知识和观察提示：资料待补充。").foregroundStyle(Theme.inkSecondary) }
+                    }
+                    if sp.curated {
                     block("识别特征") {
                         BulletList(items: sp.features)
                         CalloutCard(symbol: "arrow.left.arrow.right", title: "与相似物种的区别", text: sp.similar).padding(.top, 8)
@@ -134,6 +138,7 @@ struct SpeciesDetailView: View {
                     block("生态知识") {
                         kv("栖息环境", sp.habitat); kv("食性", sp.diet); kv("典型行为", sp.behavior); kv("分布", sp.distribution)
                         CalloutCard(symbol: "lightbulb", title: "有趣的事", text: sp.fact)
+                    }
                     }
                     VStack(alignment: .leading, spacing: 12) {
                         Text("潜水观察").font(.title3.weight(.semibold)).foregroundStyle(Theme.ink).padding(.horizontal, Theme.margin)
@@ -144,16 +149,18 @@ struct SpeciesDetailView: View {
                                     NavigationLink(value: Route.site(s.id)) {
                                         ZStack(alignment: .bottomLeading) {
                                             BundledImage(name: s.image).frame(width: 200, height: 140).clipped(); Scrim()
-                                            VStack(alignment: .leading) { Text(s.nameZh).font(.headline); Text(link.evidenceLabel).font(.caption) }.foregroundStyle(.white).padding(12)
+                                            VStack(alignment: .leading) { Text(s.isCurated ? s.nameZh : s.name).font(.headline).lineLimit(2); Text(link.evidenceLabel).font(.caption) }.foregroundStyle(.white).padding(12)
                                         }.frame(width: 200, height: 140).clipShape(RoundedRectangle(cornerRadius: 16))
                                     }.buttonStyle(.plain)
                                 }
                             }.padding(.horizontal, Theme.margin)
                         }
+                        if sp.curated {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("观察提示").font(.subheadline.weight(.semibold)).foregroundStyle(Theme.inkSecondary)
                             BulletList(items: sp.tips, symbol: "exclamationmark.circle")
                         }.padding(.horizontal, Theme.margin)
+                        }
                     }
                     block("记录过它的日志") {
                         if mineLogs.isEmpty { Text("还没有日志记录过它").foregroundStyle(Theme.inkSecondary) }
