@@ -8,7 +8,24 @@ struct SiteListView: View {
     @State private var types: Set<String> = []
     @State private var countries: Set<String> = []
     @State private var selected: Site?
+    @State private var region: MKCoordinateRegion?
     private let catalog = Catalog.shared
+
+    /// Keep the map light: only sites in view, thinned to one per grid cell when crowded.
+    private var mapSites: [Site] {
+        guard let r = region else { return Array(filtered.prefix(60)) }
+        let inView = filtered.filter {
+            abs($0.lat - r.center.latitude) <= r.span.latitudeDelta / 2 && abs($0.lon - r.center.longitude) <= r.span.longitudeDelta / 2
+        }
+        if inView.count <= 80 { return inView }
+        let cell = max(r.span.latitudeDelta, r.span.longitudeDelta) / 9
+        var seen = Set<String>(); var out: [Site] = []
+        for s in inView.sorted(by: { ($0.isCurated ? 0 : 1, $0.id) < ($1.isCurated ? 0 : 1, $1.id) }) {
+            let key = "\(Int(floor(s.lat / cell)))_\(Int(floor(s.lon / cell)))"
+            if seen.insert(key).inserted { out.append(s) }
+        }
+        return out
+    }
 
     var filtered: [Site] {
         catalog.searchSites(query).filter { (types.isEmpty || !types.isDisjoint(with: $0.types)) && (countries.isEmpty || countries.contains($0.country)) }
@@ -64,8 +81,14 @@ struct SiteListView: View {
     private var mapView: some View {
         VStack(spacing: 12) {
             Map(selection: Binding(get: { selected?.id }, set: { id in selected = filtered.first { $0.id == id } })) {
-                ForEach(filtered) { s in
+                ForEach(mapSites) { s in
                     Marker(s.name, coordinate: .init(latitude: s.lat, longitude: s.lon)).tint(Theme.accent).tag(s.id)
+                }
+            }
+            .onMapCameraChange(frequency: .onEnd) { ctx in region = ctx.region }
+            .overlay(alignment: .topLeading) {
+                if mapSites.count < filtered.count {
+                    Text("放大查看更多潜点").font(.caption).padding(8).background(.ultraThinMaterial, in: Capsule()).padding(10)
                 }
             }
             .frame(height: 360).clipShape(RoundedRectangle(cornerRadius: 20))

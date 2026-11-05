@@ -244,7 +244,7 @@ struct SitePicker: View {
         List(Catalog.shared.searchSites(q)) { s in
             Button { selection = s.id; dismiss() } label: {
                 HStack {
-                    VStack(alignment: .leading) { Text(s.nameZh).foregroundStyle(Theme.ink); Text("\(s.name) · \(s.place)").font(.caption).foregroundStyle(Theme.inkSecondary) }
+                    VStack(alignment: .leading) { Text(s.isCurated ? s.nameZh : s.name).foregroundStyle(Theme.ink); Text(s.isCurated ? "\(s.name) · \(s.place)" : s.place).font(.caption).foregroundStyle(Theme.inkSecondary) }
                     Spacer(); if selection == s.id { Image(systemName: "checkmark").foregroundStyle(Theme.accent) }
                 }.frame(minHeight: 44)
             }
@@ -267,7 +267,7 @@ struct SpeciesPicker: View {
             let local = Set(siteID.map { catalog.species(at: $0).map(\.0.id) } ?? [])
             List {
                 if !local.isEmpty && q.isEmpty {
-                    Section("此潜点常见") { ForEach(all.filter { local.contains($0.id) }) { row($0) } }
+                    Section("此潜点有记录") { ForEach(all.filter { local.contains($0.id) }) { row($0) } }
                     Section("全部") { ForEach(all.filter { !local.contains($0.id) }) { row($0) } }
                 } else { ForEach(all) { row($0) } }
             }
